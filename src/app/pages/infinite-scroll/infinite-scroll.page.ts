@@ -24,7 +24,7 @@ export class InfiniteScrollPage implements OnInit {
       this.data.push(...data2);
       this.infiniteScroll.complete();
 
-      //Validar para que el infinitScroll se termine
+      //Validar para que el infinitScroll se termine al llegar a 100
       if(this.data.length > 100) {
         this.infiniteScroll.disabled = true;
       }

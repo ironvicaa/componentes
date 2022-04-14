@@ -58,6 +58,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/inputforms/inputforms.module').then( m => m.InputformsPageModule)
   },
   {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
+  {
     path: 'list-sliding',
     loadChildren: () => import('./pages/list-sliding/list-sliding.module').then( m => m.ListSlidingPageModule)
   },
@@ -105,6 +109,12 @@ const routes: Routes = [
     path: 'toast',
     loadChildren: () => import('./pages/toast/toast.module').then( m => m.ToastPageModule)
   },
+  {
+    path: 'modal-content',
+    loadChildren: () => import('./pages/modal-content/modal-content.module').then( m => m.ModalContentPageModule)
+  },
+
+
  
 ];
 

@@ -1,21 +1,23 @@
-<app-header titulo="Checks"></app-header>
+<app-header titulo="Checks Box"></app-header>
 
 
-<!-- Checkboxes in a List -->
-<ion-list>
+<ion-content>
 
-    <ion-list>
-        <ion-item *ngFor="let entry of check">
-          <ion-label>{{entry.val}}</ion-label>
-          <ion-checkbox slot="end"
-          [color]="entry.color"
-          (click)="onClick(entry)"
-          [(ngModel)]="entry.isChecked"></ion-checkbox>
-        </ion-item>
-      </ion-list>
+  <!-- Checkboxes in a List -->
 
-      <ion-button (click)="VerData($event)" expand="block">
-          Ver Lista
-      </ion-button>
+  <ion-list>
+    <ion-item *ngFor="let entry of check">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" 
+      [color]="entry.color"
+      (click)="onClick(entry)"
+      [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
 
-</ion-list>
+  <ion-button (click)="verData($event)" expand="block">
+    Ver lista
+
+  </ion-button>
+
+</ion-content>

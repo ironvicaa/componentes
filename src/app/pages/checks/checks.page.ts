@@ -37,7 +37,7 @@ export class ChecksPage implements OnInit {
 
   }
 
-  VerData(event) {   
+  verData(event) {   
     console.log(event.data);
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-inputforms',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputformsPage implements OnInit {
 
+  email: string;
+  password: string;
+
+  usuario = {
+    email: '',
+    password: ''
+  }
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(formulario: NgForm) {
+    console.log(formulario)
   }
 
 }

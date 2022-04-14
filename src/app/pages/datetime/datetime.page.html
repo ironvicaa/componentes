@@ -1,31 +1,43 @@
 <app-header titulo="Date Time"></app-header>
 
-
 <ion-content>
     <ion-list>
         <ion-item>
-            <ion-label>Fecha y Hora</ion-label>
-            <ion-datetime hour-cycle="h12" locale="en-GB"></ion-datetime>
+            <ion-label>Fecha y Hora Basico</ion-label>
+            <!-- Initial value -->
+            <ion-datetime value="2012-12-15T13:47:20.789"></ion-datetime> 
         </ion-item>
 
         <ion-item>
-            <ion-label>Readonly</ion-label>
-            <ion-datetime
-            min="2017-01-01"
-            max="2017-01-01"
-            value="2022-03-09">            
-            </ion-datetime>
+            <ion-label>Solo lectura</ion-label>
+            <!-- Readonly -->
+            <ion-datetime readonly></ion-datetime>
         </ion-item>
 
         <ion-item>
-            <ion-label>Custom</ion-label>
-            <ion-datetime
-            min="2017-01-01"
-            max="2017-01-01"
-            value="2022-03-09">            
-            </ion-datetime>
+            <ion-label>Maximo y Minimo</ion-label>
+            <!-- Max and min -->
+            <ion-datetime 
+            min="1994-01-01"
+            max="2012-12-31"
+            value="2022-03-09"></ion-datetime>
         </ion-item>
 
+        <ion-item>
+            <ion-label>
+                <ion-item>
+                    <!-- Custom buttons -->
+                    <ion-datetime>
+                        <ion-buttons slot="buttons">
+                        <ion-button (click)="Confirm()">Guardar!</ion-button>
+                        <ion-button (click)="Reset()">Reset</ion-button>
+                        </ion-buttons>
+                    </ion-datetime>                    
+                </ion-item>
+            </ion-label>
+        </ion-item>
 
     </ion-list>
 </ion-content>
+
+

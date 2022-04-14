@@ -58,6 +58,12 @@ export class HomePage implements OnInit {
     },
 
     {
+      icono: 'grid-outline',
+      name: 'Grid',
+      path: '/grid',
+    },
+  
+    {
       icono: 'bookmarks',
       name: 'Fab',
       path: '/fab',
@@ -73,6 +79,12 @@ export class HomePage implements OnInit {
       icono: 'information-circle',
       name: 'Input Forms',
       path: '/inputforms',
+    },
+
+    {
+      icono: 'list-outline',
+      name: 'List',
+      path: '/list',
     },
 
     {
@@ -97,6 +109,12 @@ export class HomePage implements OnInit {
       icono: 'invert-mode',
       name: 'Modal',
       path: '/modal',
+    },
+
+    {
+      icono: 'invert-mode',
+      name: 'Modal Content',
+      path: '/modal-content',
     },
 
     {
